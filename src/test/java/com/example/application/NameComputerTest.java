@@ -1,6 +1,5 @@
 package com.example.application;
 
-import static com.example.application.NameComputerFactory.createNameComputer;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -11,7 +10,7 @@ class NameComputerTest {
 
     @BeforeEach
     void setUp() {
-        nameComputer = createNameComputer();
+        nameComputer = new NameComputer();
     }
 
     @Test
